@@ -15,10 +15,10 @@ class App extends Component {
       }
     ]
   }
-  swichNameHandler= () =>{
+  swichNameHandler= (newName) =>{
     this.setState({persons:[
       {
-        name:'Jalees Jahanzaib', age:'20'
+        name: newName , age:'20'
       },
       {
         name:'Mayank Goyal', age:'21'  
@@ -32,9 +32,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>I m a React App</h1>
-        <button onClick={this.swichNameHandler}> switch</button>
+        <button onClick={this.swichNameHandler.bind(this,'Jala Boy')}> switch</button>
 
-        <Person name={this.state.persons[0].name } age={this.state.persons[0].age  } />
+        <Person name={this.state.persons[0].name } age={this.state.persons[0].age}  click={this.swichNameHandler.bind(this,"JJ in the House")} />
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age }  />
         <Person name={this.state.persons[2].name } age={this.state.persons[2].age } />
 
