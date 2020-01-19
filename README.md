@@ -11,7 +11,7 @@
 ### Topic: Second Client Meet
 ### Attendees: #NAMES#
 
-Type | Description | Owner | Deadline |Action
+Type | Description | Owner | Deadline
 ---- | ---- | ---- | ----
 D | #DESCRIPTION# | - | -
 T | #DESCRIPTION# | #OWNER# | #DEADLINE# 
